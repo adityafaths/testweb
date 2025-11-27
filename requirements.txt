@@ -1,0 +1,5 @@
+streamlit==1.38.0
+pillow==10.4.0
+python-magic==0.4.27
+numpy==2.1.0
+tqdm==4.66.4
