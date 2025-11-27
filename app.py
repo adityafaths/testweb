@@ -318,7 +318,7 @@ if run:
     for zname, zbytes in zip_inputs:
         try:
             pairs = extract_zip_to_memory(zbytes)
-            base_label = unique_name(guess_base_name_from_zip(zname), used_labels)
+            base_name = os.path.splitext(os.path.basename(zip_path))[0]
             items = [(relp, data) for (relp, data) in pairs if relp.suffix.lower() in allowed]
             if items:
                 jobs.append({"label": base_label, "items": items})
