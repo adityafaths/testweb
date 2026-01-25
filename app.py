@@ -1,5 +1,3 @@
-CODE CREDIT WITH HER0
-
 import io, os, zipfile, time, threading
 from functools import partial, lru_cache
 from concurrent.futures import ThreadPoolExecutor, as_completed
